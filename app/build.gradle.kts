@@ -40,6 +40,7 @@ android {
     }
     buildFeatures {
         compose = true
+        dataBinding = true
     }
     composeOptions {
         kotlinCompilerExtensionVersion = "1.5.1"
@@ -72,5 +73,9 @@ dependencies {
     //hilt
     implementation(libs.daggerHiltAndroid)
     kapt(libs.daggerHiltCompiler)
+
+    //lottie
+    implementation(libs.lottie)
+    implementation(libs.lottieCompose)
 
 }

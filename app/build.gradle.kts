@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    alias(libs.plugins.hilt)
     kotlin("kapt")
 
 }
@@ -68,6 +69,7 @@ dependencies {
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
+    implementation(libs.androidx.ui.util)
     debugImplementation(libs.androidx.ui.test.manifest)
 
     //hilt
@@ -78,4 +80,8 @@ dependencies {
     implementation(libs.lottie)
     implementation(libs.lottieCompose)
 
+    //appcompanist
+    implementation(libs.appcompanistInsets)
+    implementation(libs.appcompanistPager)
+    implementation(libs.appcompanistCoil)
 }

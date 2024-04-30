@@ -15,7 +15,7 @@ fun LoopLottieAnimation(
     modifier: Modifier = Modifier
 ) {
     val animationSpec = remember { LottieAnimationSpec.RawRes(rawId) }
-    val animationState = rememberLottieAnimationState(imageAssetDelegate = com.airbnb.lottie.ImageAssetDelegate(), enableMergePaths = false, autoPlay = true, repeatCount = Int.MAX_VALUE, initialProgress = 0f)
+    val animationState = rememberLottieAnimationState( enableMergePaths = false, autoPlay = true, repeatCount = Int.MAX_VALUE, initialProgress = 0f)
 
     LottieAnimation(
         spec = animationSpec,

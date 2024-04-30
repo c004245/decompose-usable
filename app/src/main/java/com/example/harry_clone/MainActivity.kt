@@ -21,7 +21,7 @@ class MainActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             MainScreen { type ->
-                val intent = Intent(this, )
+//                val intent = Intent(this, )
             }
 
         }

@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
@@ -20,6 +21,7 @@ import androidx.compose.ui.unit.dp
 import com.example.harry_clone.R
 import com.example.harry_clone.ui.HouseType
 import com.example.harry_clone.ui.widget.lottie.LoopLottieAnimation
+import com.example.harry_clone.ui.widget.main.MainPager
 
 @Composable
 fun MainScreen(onItemSelected: (HouseType) -> Unit) {
@@ -52,6 +54,11 @@ fun MainScreen(onItemSelected: (HouseType) -> Unit) {
             )
             Spacer(modifier = Modifier.height(24.dp))
             MainPager(
+                list = itemList,
+                onItemSelected = onItemSelected,
+                modifier = Modifier
+                    .fillMaxSize()
+                    .padding(horizontal = 16.dp)
 
             )
         }

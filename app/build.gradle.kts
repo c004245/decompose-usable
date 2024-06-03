@@ -71,6 +71,7 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     implementation(libs.androidx.ui.util)
     debugImplementation(libs.androidx.ui.test.manifest)
+    implementation(libs.compose.viewModel)
 
     //hilt
     implementation(libs.daggerHiltAndroid)
